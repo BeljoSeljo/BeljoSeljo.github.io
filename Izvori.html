@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yamaha</title>
+<style>
+body{
+  margin:0px; 
+  background-color: #d3d3d3; 
+  font-family: Monaco, Courier New, monospace; 
+  font-size: 14px; 
+  color: black; 
+  text-align:center; 
+  text-decoration:none;}
+  
+ul {
+  list-style-type: none; /* miče bullets */
+  margin: 0; /*iz nekog razloga ima prostora oko navbara*/
+  padding: 0;
+  overflow: hidden; /*da makne tekst/croppa ako ide izvan okvira*/
+  background-color: #333;
+  top:0;
+  width:100%;
+}
+
+li {
+  float: left;
+}
+
+
+
+li a, .yamaha{
+  display: inline-block; /*kao da bude nekakav veći blok*/
+  color: red;
+  text-allign: center; /*txt u sredini*/
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Monaco", "Courier New", monospace;
+  cursor: grab;
+  text-decoration: none; /*da ne budu linije ispod teksta*/
+}
+
+li a:hover, .dpdwn:hover .yamaha{
+  background-color: #5b5b5b;
+}
+
+li.dpdwn {
+  display: inline-block
+}
+
+.sadržaj{
+  display: none; /*da ovo u dropdownu ne bude vidljivo cijelo vrijeme*/
+  position: absolute; /*da box bude zadane veličine*/
+  background-color: red;
+  width: 220px;
+  z-index: 1; /*da dropdwn content bude ispred slike ili čega god*/
+}
+
+.sadržaj a{
+  color: black;
+  padding: 10px 14px;
+  display: block;
+  text-align: center;
+  cursor: grab;
+  text-decoration: none;
+}
+
+.sadržaj a:hover {
+  background-color: #5b5b5b;
+}
+
+.dpdwn:hover .sadržaj {
+  display: block;
+}
+.trenutnastr{
+background-color: red;
+color: black;
+}
+
+.dpdwn-img{
+  display: none;
+  position: absolute;
+  backround-color: white;
+  width: 90px;
+  z-index: 1;
+}
+
+.dpdwn-img a:hover {
+  background-color: #5b5b5b;
+}
+
+.dpdwn:hover .dpdwn-img{
+  display: block;
+}
+
+</style>
+</head>
+
+<body>
+<ul>
+  <li><a href="index.html"><b>Home</b></a></li>
+  <li class="dpdwn"> 
+  <a href="javascript:void(0)" class="yamaha"><b>Motori</b></a>
+    <div class="sadržaj">
+      <a href="Heritage.html"><b>Sport Heritage</b></a>
+      <a href="Sport.html"><b>Supersport</b></a>
+      <a href="Naked.html"><b>Hyper Naked</b></a>
+      <a href="Motocross.html"><b>Motocross</b></a>
+      <a href="Touring.html"><b>Adventure Touring</b></a>
+    </div>
+  <li class= "dpdwn">
+  <a href="Yamaha.html" class= "yamaha"><b>Info</b></a>
+    <div class= "dpdwn-img">
+     <img src="Yamaha-Logo.png" alt= "slika nije dostupna" width= 180%>
+    </div>
+  <li style="float:right;"><a class= "trenutnastr" href="Izvori.html"<b>Izvori</b></a></li>
+  </li>
+</ul>
+
+
+
+<h1>Izvori koje sam koristio:</h1>
+<h2>Dropdown logo:</h2>
+<p>License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons 4.0 BY-NC</a></p>
+
+<h2>Yamaha na početnoj stranici:</h2>
+<p>Izvor: <a href="https://www.yamaha-piccilo.hr/motori/yamaha-xsr900-2022/">XSR 900</a></p>
+
+<h2>Specifikacije:</h2>
+<p>Izvor: <a href="https://www.yamaha-piccilo.hr/motori/yamaha-xsr900-2022/">Specifikacije</a></p>
+
+<h2>Torakusu Yamaha:</h2>
+<p>Izvor: <a href="https://commons.wikimedia.org/wiki/File:Torakusu-yamaha.jpg">Yamaha</a></p>
+
+<h2>Orgulje:</h2>
+<p>License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-Share Alike 3.0 Unported </a></p>
+
+<h2>Yamaha YM1(1965):</h2>
+<p>License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-Share Alike 4.0 International </a></p>
+
+<h2>Slike ostalih motora:</h2>
+<p>Izvor: <a href="https://www.yamahamotorsports.com/motorcycle">Svi motori</a></p>
+
+<h2>O Yamahi-izvor:</h2>
+<p>Izvor: <a href="https://en.wikipedia.org/wiki/Yamaha_Corporation">Yamaha motorcycles</a></p>
+
+</body>
+</html>
